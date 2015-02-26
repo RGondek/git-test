@@ -11,3 +11,10 @@ and open the template in the editor.
 h1 {
     color: darkgreen;
 }
+
+table{ border: 1px solid black; }
+td,th{
+    border: 1px solid black;
+    width: 50px;
+}
+.par td{ background-color: #555; }

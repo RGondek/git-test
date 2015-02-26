@@ -38,13 +38,36 @@
             echo "<br><br>Média intermediária: $mI <br> Média Final: $mF";
         ?>
         <br>
-        <hr>
         <br>
+        <hr><hr>
         <h2>Aula 02</h2>
+        <h3>Exercício 01</h3>
+        <h4>a)</h4>
         <?php 
-            echo "<table><th><td>ID</td><td>NOME</td></th>";
+            echo "<table><tr><th>ID</th><th>NOME</th></tr>";
             for ($i = 0; $i < 5; $i++){
                 echo "<tr><td>id</td><td>nome</td></tr>";
+            }
+            echo "</table>";
+        ?>
+        <br>
+        <hr>
+        <h4>b)</h4>
+        <?php 
+            echo "<table><tr><th>ID</th><th>NOME</th><th>DESC</th></tr>";
+            for ($i = 0; $i < 5; $i++){
+                echo "<tr><td>id</td><td>nome</td><td>desc</td></tr>";
+            }
+            echo "</table>";
+        ?>
+        <br>
+        <hr>
+        <h4>c)</h4>
+        <?php 
+            echo "<table><tr><th>ID</th><th>NOME</th><th>DESC</th></tr>";
+            for ($i = 0; $i < 7; $i++){
+                if ($i % 2 == 0){ echo "<tr><td>id</td><td>nome</td><td>desc</td></tr>"; }
+                else { echo "<tr class='par'><td>id</td><td>nome</td><td>desc</td></tr>"; }
             }
             echo "</table>";
         ?>
