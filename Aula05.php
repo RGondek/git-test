@@ -10,10 +10,13 @@
             echo "<table>";
                 for($i=0;$i< count($aulas);$i++){
                     echo "<tr>";
-                    for($j=0;$j< count($aulas[$j]);$j++){
-                        echo "<td>"
+                    $vet = $aulas[$i];
+                    for($j=0;$j< count($vet);$j++){
+                        echo "<td> $vet[$j] </td>";
                     }
+                    echo "</tr>";
                 }
+                echo "</table>";
         ?>
     </body>
 </html>
