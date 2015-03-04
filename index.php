@@ -71,5 +71,40 @@
             }
             echo "</table>";
         ?>
+        <br>
+        <br>
+        <hr><hr>
+        <h3>Exercício 02</h3>
+        <h4>Primo</h4>
+        <?php 
+            $num = 69;
+            $primo = TRUE;
+            if ($num % 2 == 0 && $num != 2){ $primo = FALSE; }
+            else {
+                for ($i = 3; $i < $num; $i++){
+                    if($num % $i == 0) { $primo = FALSE; }
+                }
+            }
+            if ($primo) { echo "$num é Primo"; }
+            else { echo "$num não é Primo"; }
+        ?>
+        <br>
+        <br>
+        <hr><hr>
+        <h3>Exercício 03</h3>
+        <h4>Fibonacci</h4>
+        <?php 
+            $a = 0; $b = 1; $c = 1;
+            $num = 10;
+            for ($i = 0; $i < $num; $i++){
+                if ($i == 0) { echo "| $a | $b "; }
+                echo "| $c ";
+                $a = $b;
+                $b = $c;
+                $c = $a + $b;
+            }
+        ?>
+        <br>
+        <hr>
     </body>
 </html>
