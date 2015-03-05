@@ -18,3 +18,12 @@ td,th{
     width: 50px;
 }
 .par td{ background-color: #555; }
+
+#tbAula5{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#tbAula5 td, #tbAula5 th{
+    border: 2px solid black;
+    width: auto;
+}
