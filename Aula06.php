@@ -8,8 +8,16 @@
     <body>
         <?php
             include 'operations.php';
-            $n1; $n2;
-            echo "$n1 + $n2 = " + soma($n1, $n2); 
+            
+            $n1 = 25; $n2 = 15;
+            $res = soma($n1, $n2);
+            echo "Soma: $n1 + $n2 = $res";
+            $res = sub($n1, $n2);
+            echo "<br>Subtração: $n1 - $n2 = $res";
+            mult($n1, $n2, $res);
+            echo "<br>Multiplicação: $n1 x $n2 = $res";
+            div($n1, $n2, $res);
+            echo "<br>Divisão: $n1 / $n2 = $res";
         ?>
     </body>
 </html>
