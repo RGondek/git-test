@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <title>Aula 05</title>
     </head>
     <body>
         <?php
